@@ -1,9 +1,92 @@
+/****** scratchpad ******/
+
+    
+    
+    
+//TEMPLATE 2!!!
+//.css("display","none")    
+    
+    
+    
+$("#menu").scroll(function() {
+    if ($(this).scrollTop() >= 10) { 
+$("#mission").css("display","none");
+    } else if ($(this).scrollTop() <= 10){
+        $("#mission").css("display","block");;
+    }
+});
+
+ $("#menu").scroll(function() {
+    if ($(this).scrollTop() >= 20) { 
+        $("#firm").css("display","none")   ;
+    } else if ($(this).scrollTop() <= 20){
+        $("#firm").css("display","block");;
+    }
+});
+
+ $("#menu").scroll(function() {
+    if ($(this).scrollTop() >= 90) { 
+        $("#leadership").fadeOut("2000");
+    } else if ($(this).scrollTop() <= 90){
+        $("#leadership").fadeIn("2000");
+    }
+});
+    
+$("#menu").scroll(function() {
+    if ($(this).scrollTop() >= 120) { 
+        $("#portfolio").fadeOut("2000");
+    } else if ($(this).scrollTop() <= 120){
+        $("#portfolio").fadeIn("2000");
+    }
+});
+
+ $("#menu").scroll(function() {
+    if ($(this).scrollTop() >= 150) { 
+        $("#funds").fadeOut("2000");
+    } else if ($(this).scrollTop() <= 150){
+        $("#funds").fadeIn("2000");
+    }
+});
+
+ $("#menu").scroll(function() {
+    if ($(this).scrollTop() >= 180) { 
+        $("#work").fadeOut("2000");
+    } else if ($(this).scrollTop() <= 180){
+        $("#work").fadeIn("2000");
+    }
+});    
+
+    $("#menu").scroll(function() {
+    if ($(this).scrollTop() >= 210) { 
+        $("#contact").fadeOut("2000");
+    } else if ($(this).scrollTop() <= 210){
+        $("#contact").fadeIn("2000");
+    }
+});
+
+ $("#menu").scroll(function() {
+    if ($(this).scrollTop() >= 240) { 
+        $("#investor").fadeOut("2000");
+    } else if ($(this).scrollTop() <= 240){
+        $("#investor").fadeIn("2000");
+    }
+});
+
+ $("#menu").scroll(function() {
+    if ($(this).scrollTop() >= 270) { 
+        $("#privacy").fadeOut("2000");
+    } else if ($(this).scrollTop() <= 270){
+        $("#privacy").fadeIn("2000");
+    }
+});
+    
+ 
+    
+//END TEMPLATE 2!!!
 
 
 
 
-
-.css("display","none");
 /****** SF ******/
 $(document).ready(function() {
 	$(".ryu").mouseenter(function() {
