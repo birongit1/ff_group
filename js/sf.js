@@ -1,3 +1,10 @@
+
+
+
+
+
+.css("display","none");
+/****** SF ******/
 $(document).ready(function() {
 	$(".ryu").mouseenter(function() {
 		$(".ryu-still").hide();
@@ -70,3 +77,6 @@ function playHadouken() {
 //	.mouseup(function() {
 //		$("").hide();
 //		$("").show();   
+
+
+

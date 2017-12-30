@@ -1,4 +1,12 @@
 
+* {
+    margin:0;
+}
+
+html, body {
+    overflow:hidden;
+}
+
 body {
     background-image: url("../img/background-w-overlay.jpg");
 /*    background: navy;*/
@@ -9,18 +17,39 @@ a {
     text-decoration: none !important;
 }
 
-#menu {    
-    overflow: scroll;
-    width: 400px;
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+#scroller {
     height: 400px;
-    display: inline-block;
+    width: 400px;
+    overflow: auto;
+    border: solid 1px blue;
     margin: 10px;
+/*    position: relative;*/
     position: absolute;
-/*    position: fixed;*/
     top: 50%;
     left: 25%;
     transform: translate(-25%, -50%);
+
+}
+
+#menu {    
+    overflow: auto;
+    width: 400px;
+    height: 150px;
+    display: inline-block;
+    margin: 100px 0px;
     list-style-type: none;
+    border: solid 1px red;
+    padding: 0;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: -15px; 
+    
 }
 
 /*
@@ -50,11 +79,25 @@ a {
 }
 */
 
+.item {
+    padding: 0;
+    display: block;
+/*    position: absolute;*/
+/*
+    top: 0;
+    bottom: 0;
+    left: 0;
+*/
+/*    right: -17px;*/
+    overflow-y: scroll;
+
+    
+}
     
 .item a {
     display: block;
     width: 240px;
-    margin: 5px auto;
+    margin: 0px auto;
     padding: 8px;
     font-size: 30px;
     color: #eda833;
