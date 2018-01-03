@@ -196,11 +196,139 @@ $("#menu").scroll(function() {
     } else if ($(this).scrollTop() <= 450){
         $("#terms").css("opacity", 1);
     }
-});     
-    
+});
   
     
     
+/***** MOUSEOVER/MOUSEOUTS FOR MENU COLOR *****/    
+  
+//MISSION
+$("#mission").mouseover(function() {
+  $("#mission").next().css("color", "red");
+});
+  
+$("#mission").mouseout(function() {
+   $("#mission").next().css("color", "transparent");
+});
+
+/***********************************************/
+
+//FIRM
+$("#firm").mouseover(function() {
+  $("#firm").prev().css("color", "red");
+  $("#firm").next().css("color", "red");
+});
+  
+$("#firm").mouseout(function() {
+   $("#firm").prev().css("color", "transparent");
+   $("#firm").next().css("color", "transparent");
+});
+
+/***********************************************/
+
+//LEADERSHIP
+$("#leadership").mouseover(function() {
+  $("#leadership").prev().css("color", "red");
+  $("#leadership").next().css("color", "red");
+});
+  
+$("#leadership").mouseout(function() {
+   $("#leadership").prev().css("color", "transparent");
+   $("#leadership").next().css("color", "transparent");
+});
+
+/***********************************************/
+
+//PORTFOLIO
+$("#portfolio").mouseover(function() {
+  $("#portfolio").prev().css("color", "red");
+  $("#portfolio").next().css("color", "red");
+});
+  
+$("#portfolio").mouseout(function() {
+   $("#portfolio").prev().css("color", "transparent");
+   $("#portfolio").next().css("color", "transparent");
+});
+
+/***********************************************/
+
+//FUNDS
+$("#funds").mouseover(function() {
+  $("#funds").prev().css("color", "red");
+  $("#funds").next().css("color", "red");
+});
+  
+$("#funds").mouseout(function() {
+   $("#funds").prev().css("color", "transparent");
+   $("#funds").next().css("color", "transparent");
+});
+
+/***********************************************/
+
+//WORK
+$("#work").mouseover(function() {
+  $("#work").prev().css("color", "red");
+  $("#work").next().css("color", "red");
+});
+  
+$("#work").mouseout(function() {
+   $("#work").prev().css("color", "transparent");
+   $("#work").next().css("color", "transparent");
+});
+
+/***********************************************/
+
+//CONTACT
+$("#contact").mouseover(function() {
+  $("#contact").prev().css("color", "red");
+  $("#contact").next().css("color", "red");
+
+});
+  
+$("#contact").mouseout(function() {
+   $("#contact").prev().css("color", "transparent");
+   $("#contact").next().css("color", "transparent");
+});
+
+/***********************************************/
+
+//INVESTOR
+$("#investor").mouseover(function() {
+  $("#investor").prev().css("color", "red");
+  $("#investor").next().css("color", "red");
+});
+  
+$("#investor").mouseout(function() {
+   $("#investor").prev().css("color", "transparent");
+   $("#investor").next().css("color", "transparent");
+});
+
+/***********************************************/
+
+//PRIVACY
+$("#privacy").mouseover(function() {
+  $("#privacy").prev().css("color", "red");
+  $("#privacy").next().css("color", "red");
+});
+  
+$("#privacy").mouseout(function() {
+   $("#privacy").prev().css("color", "transparent");
+   $("#privacy").next().css("color", "transparent");
+});
+
+/***********************************************/
+
+//TERMS
+$("#terms").mouseover(function() {
+  $("#terms").prev().css("color", "red");
+});
+  
+$("#terms").mouseout(function() {
+   $("#terms").prev().css("color", "transparent");
+});
+
+/***********************************************/
+
     
     
     
@@ -215,10 +343,5 @@ $("#menu").scroll(function() {
     
     
     
-    
-    
-    
-    
-    
-    
-})
+//END
+});

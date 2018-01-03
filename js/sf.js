@@ -1,7 +1,13 @@
 /****** scratchpad ******/
 
     
-    
+//onclick function
+<script>
+function myFunction() {
+    document.getElementById("item").style.background = "red";
+    $('.item').css({"color": "red"})
+}
+</script>
     
 //TEMPLATE 2!!!
 //.css("display","none")    

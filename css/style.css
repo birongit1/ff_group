@@ -40,7 +40,7 @@ a {
     border: solid 1px red;
     overflow: auto;
     width: 400px;
-    height: 150px;
+    height: 350px;
     display: inline-block;
     margin: 100px 0px;
     list-style-type: none;
@@ -79,8 +79,8 @@ a {
 */
 
 .item {
-    padding: 0;
-    display: block;
+/*    padding: 0;*/
+/*    display: block;*/
 /*    position: absolute;*/
 /*
     top: 0;
@@ -88,8 +88,9 @@ a {
     left: 0;
 */
 /*    right: -17px;*/
-    overflow-y: scroll;
+/*    overflow-y: scroll;*/
 
+/*    color: #eda833;*/
     
 }
     
@@ -99,10 +100,9 @@ a {
     margin: 0px auto;
     padding: 8px;
     font-size: 30px;
-    color: #eda833;
     font-family: sans-serif;
+/*    color: #eda833;*/
     cursor: pointer;
-    display: block;
     -webkit-transition: all 400ms ease-in;
     -webkit-transform: scale(1); 
     -ms-transition: all 400ms ease-in;
@@ -113,9 +113,11 @@ a {
     transform: scale(1);   
 }
 
+/*
 .item a:hover {
     color: #fff;
     z-index: 2;
+*/
 /*
     -webkit-transition: all 200ms ease-in-out;
     -webkit-transform: scale(1.2);
@@ -126,7 +128,25 @@ a {
     transition: all 200ms ease-in-out;
     transform: scale(1.2);
 */
+/*}*/
+
+/*
+.item1:hover + li
+.item2:hover + li,
+.item3:hover + li,
+.item4:hover + li,
+.item5:hover + li,
+.item6:hover + li,
+.item7:hover + li,
+.item8:hover + li,
+.item9:hover + li,
+.item10:hover + li 
+{
+  background-color: green !important; 
 }
+*/
+
+
 
 #menu_text_field {
     text-align: center;
@@ -148,13 +168,16 @@ a {
     display: block; 
 }
 
+/*
 #menu li.active {
     background: rgba(255,255,255,0.1);
     padding: 5px;
     border-radius: 8px;
 }
+*/
 
+/*
 #menu li.active a {
     color: #f7daa8;
-/*    color: #fff;*/
-}
+    color: #fff;
+}*/
