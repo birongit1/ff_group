@@ -13,34 +13,34 @@ $(document).ready(function () {
             $("#text1").show();
             $("#text2, #text3, #text4, #text5, #text6, #text7, #text8, #text9, #text10").hide();
         })
-//        .mouseover(function () {
-//            $("#mission").css({
-//                "color": "#fff",
-//                "opacity": "1",
-//                "font-weight": "bold"
-//            });
-//            $("#mission").next().css({
-//                "color": "#eda833",
-//                "opacity": "1"
-//            });
-//        })
-//        .mouseout(function () {
-//            $("#mission").css({
-//                "color": "#eda833",
-//                "opacity": "0.5",
-//                "font-weight": "normal"
-//            });
-//            $("#mission").next().css({
-//                "color": "#eda833",
-//                "opacity": "0.5"
-//            });
-//        })
-            .scroll(function () {
+        .mouseover(function () {
             $("#mission").css({
                 "color": "#fff",
                 "opacity": "1",
                 "font-weight": "bold"
-                "opacity": "1 - $("#menu").scrollTop() / 5"});
+            });
+            $("#mission").next().css({
+                "color": "#eda833",
+                "opacity": "1"
+            });
+        })
+        .mouseout(function () {
+            $("#mission").css({
+                "color": "#eda833",
+                "opacity": "0.5",
+                "font-weight": "normal"
+            });
+            $("#mission").next().css({
+                "color": "#eda833",
+                "opacity": "0.5"
+            });
+        });
+//            .scroll(function () {
+//            $("#mission").css({
+//                "color": "#fff",
+//                "opacity": "1",
+//                "font-weight": "bold"
+//                "opacity": "1 - $("#menu").scrollTop() / 5"});
         });
     
     
@@ -421,8 +421,8 @@ $(document).ready(function () {
     //OPACITY METHOD 1
 
         //MISSION
-//        $("#menu").scroll(function () {
-//            $("#mission").css("opacity", 1 - $("#menu").scrollTop() / 5);
+        $("#menu").scroll(function () {
+            $("#mission").css("opacity", 1 - $("#menu").scrollTop() / 5);
 //        });
         //FIRM
         $("#menu").scroll(function () {
