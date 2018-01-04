@@ -2,12 +2,12 @@
 
     
 //onclick function
-<script>
-function myFunction() {
-    document.getElementById("item").style.background = "red";
-    $('.item').css({"color": "red"})
-}
-</script>
+//<script>
+//function myFunction() {
+//    document.getElementById("item").style.background = "red";
+//    $('.item').css({"color": "red"})
+//}
+//</script>
     
 //TEMPLATE 2!!!
 //.css("display","none")    
@@ -91,13 +91,14 @@ $("#menu").scroll(function() {
 //END TEMPLATE 2!!!
 
 
-
+    
 
 /****** SF ******/
 $(document).ready(function() {
-	$(".ryu").mouseenter(function() {
+	$(".ryu")
+    .mouseenter(function() {
 		$(".ryu-still").hide();
-		$(".ryu-cool").hide();
+		$(".ryu-cool").hide();    
 		$(".ryu-ready").show();
 	})
 	.mouseleave(function() {
