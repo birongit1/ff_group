@@ -1,0 +1,204 @@
+/*
+body
+div#scroller
+ul#menu
+li.item.item1#mission
+a
+----
+div#menu_text_field
+div#text1.menu_item_text 
+*/
+
+
+* {
+    margin:0;
+}
+
+html, body {
+    overflow:hidden;
+}
+
+body {
+    background-image: url("../img/background-w-overlay.jpg");
+/*    background: navy;*/
+    height: 100%;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+
+
+/**************** SECTION 1: MENU FIELD ****************/
+
+
+
+div#scroller {
+/*    border: solid 1px blue;    */
+    height: 800px;
+/*    width: 400px;*/
+/*    'overflow: auto' unlocks second scroller*/
+/*    overflow: auto;*/
+    margin: 10px;
+/*    position: relative;*/
+    position: absolute;
+/*
+    top: 50%;
+    left: 25%;
+    transform: translate(-25%, -50%);
+*/
+
+}
+
+ul#menu {    
+/*    border: solid 1px red;*/
+    overflow: auto;
+/*    width: 400px;*/
+/*    height: 300px;*/
+    display: inline-block;
+    margin: 100px 0px;
+    list-style-type: none;
+    padding: 100px 0px 0px 0px;
+    position: relative;
+/*
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+*/
+/*    border-top: solid 2px red;*/
+}
+    
+li.item {
+    color: #eda833;
+    opacity: 0.4;
+    display: block;
+    width: 240px;
+    margin: 0px auto;
+    padding: 8px;
+    font-size: 35px;
+    font-family: sans-serif;
+    cursor: pointer;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);   
+/*    border: dashed 1px yellow;*/
+}
+
+li.item:hover {
+    color: #fff;
+    opacity: 1;
+} 
+/*
+a:visited {
+    color: #eda833;
+}
+*/
+
+
+
+
+
+/**************** SECTION 2: TEXT FIELD ****************/
+
+
+
+
+div#menu_text_field {
+    text-align: center;
+    background: transparent;
+    transform: translate(-75%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+div.menu_item_text {
+    display: none;
+    color: #fff;
+    overflow: scroll;
+}
+
+/*
+div.menu_item_text:target {
+    display: block; 
+}
+*/
+
+.add {
+    display: none;
+}
+
+/*
+.remove {
+    display: none;
+}
+*/
+
+/*
+#menu li.active {
+    background: rgba(255,255,255,0.1);
+    padding: 5px;
+    border-radius: 8px;
+}
+*/
+
+/*
+#menu li.active a {
+    color: #f7daa8;
+    color: #fff;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+/*******************EXTRA STUFF:*******************/
+/*******************EXTRA STUFF:*******************/
+/*******************EXTRA STUFF:*******************/
+
+
+
+/*
+//class already exists...
+li.item:hover {
+    -webkit-transition: all 200ms ease-in-out;
+    -webkit-transform: scale(1.2);
+    -ms-transition: all 200ms ease-in-out;
+    -ms-transform: scale(1.2);   
+    -moz-transition: all 200ms ease-in-out;
+    -moz-transform: scale(1.2);
+    transition: all 200ms ease-in-out;
+    transform: scale(1.2);
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
